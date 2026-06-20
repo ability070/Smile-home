@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smile Home Hotel & Suites | Luxury Hotel</title>
+
+<meta name="description"
+content="Smile Home Hotel & Suites offers luxury accommodation, restaurant services, conference halls, swimming pool, and premium hospitality.">
+
+<meta name="keywords"
+content="Hotel, Luxury Hotel, Suites, Accommodation, Smile Home Hotel">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<script>
+tailwind.config = {
+darkMode: 'class'
+}
+</script>
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+.hero{
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+
+url("images/gallery3.jpeg");
+background-size:cover;
+background-position:center;
+}
+
+.glass{
+backdrop-filter: blur(15px);
+background: rgba(255,255,255,.15);
+border:1px solid rgba(255,255,255,.2);
+}
+
+.room-card:hover{
+transform:translateY(-10px);
+}
+
+.fade{
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+</style>
+
+</head>
+
+<body class="bg-white dark:bg-gray-900 dark:text-white">
+
+<!-- NAVBAR -->
+
+<nav class="fixed top-0 left-0 w-full z-50 bg-white/90 dark:bg-gray-900 shadow">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="flex justify-between items-center py-4">
+
+<h1 class="text-2xl font-bold text-purple-800">
+Smile Home Hotel
+</h1>
+
+<div class="hidden md:flex gap-6">
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#rooms">Rooms</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+<div class="flex gap-4">
+
+<button id="darkBtn">
+<i class="fa-solid fa-moon"></i>
+</button>
+
+<a href="#booking"
+class="bg-purple-700 text-white px-5 py-2 rounded-full">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section
+id="home"
+class="hero h-screen flex items-center justify-center text-center text-white">
+
+<div>
+
+<h1 class="text-6xl font-bold mb-6">
+Smile Home Hotel 
+</h1>
+
+<p class="text-xl mb-8 max-w-2xl mx-auto">
+Experience Comfort, Luxury & Hospitality Like Never Before
+</p>
+
+<div class="flex justify-center gap-4">
+
+<a href="#booking"
+class="bg-yellow-400 text-black px-8 py-3 rounded-full font-bold">
+Book a Room
+</a>
+
+<a href="#rooms"
+class="border border-white px-8 py-3 rounded-full">
+View Rooms
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="py-24">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="grid md:grid-cols-2 gap-12 items-center">
+
+<div>
+
+<img
+src="images/gallery3.jpeg">
+
+</div>
+
+<div>
+
+<h2 class="text-5xl font-bold text-purple-800 mb-6">
+About Us
+</h2>
+
+<p class="mb-6 text-lg">
+
+Smile Home Hotel is a luxury destination created
+for travelers seeking elegance, comfort and exceptional hospitality.
+
+</p>
+
+<p class="mb-6">
+
+Our mission is to deliver unforgettable experiences
+through world-class accommodation and personalized service.
+
+</p>
+
+<div class="grid grid-cols-2 gap-6 mt-10">
+
+<div class="bg-purple-50 p-6 rounded-xl">
+
+<h3 class="text-4xl font-bold text-purple-800">50+</h3>
+<p>Luxury Rooms</p>
+
+</div>
+
+<div class="bg-purple-50 p-6 rounded-xl">
+
+<h3 class="text-4xl font-bold text-purple-800">5000+</h3>
+<p>Happy Guests</p>
+
+</div>
+
+<div class="bg-purple-50 p-6 rounded-xl">
+
+<h3 class="text-4xl font-bold text-purple-800">10+</h3>
+<p>Years Service</p>
+
+</div>
+
+<div class="bg-purple-50 p-6 rounded-xl">
+
+<h3 class="text-4xl font-bold text-purple-800">80+</h3>
+<p>Staff Members</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ROOMS -->
+
+<section
+id="rooms"
+class="py-24 bg-gradient-to-b from-purple-50 to-white">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="text-center text-5xl font-bold text-purple-800 mb-16">
+Luxury Rooms
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<!-- ROOM 1 -->
+
+<div class="room-card bg-white rounded-3xl shadow-xl overflow-hidden transition">
+
+<img
+src="images/room1.jpeg"
+class="h-64 w-full object-cover">
+
+<div class="p-8">
+
+<h3 class="text-2xl font-bold mb-2">
+Standard Room
+</h3>
+
+<p class="text-yellow-500 text-3xl font-bold mb-6">
+₦35,000/Night
+</p>
+
+<ul class="space-y-2 mb-6">
+
+<li>✓ Queen Bed</li>
+<li>✓ Air Conditioning</li>
+<li>✓ Smart TV</li>
+<li>✓ Free WiFi</li>
+<li>✓ Private Bathroom</li>
+
+</ul>
+
+<a href="#booking"
+class="bg-purple-700 text-white px-6 py-3 rounded-full inline-block">
+Reserve Now
+</a>
+
+</div>
+
+</div>
+
+<!-- ROOM 2 -->
+
+<div class="room-card bg-white rounded-3xl shadow-xl overflow-hidden transition">
+
+<img
+src="images/room2.jpeg"
+class="h-64 w-full object-cover">
+
+<div class="p-8">
+
+<h3 class="text-2xl font-bold mb-2">
+Deluxe Room
+</h3>
+
+<p class="text-yellow-500 text-3xl font-bold mb-6">
+₦30,000/Night
+</p>
+
+<ul class="space-y-2 mb-6">
+
+<li>✓ King Bed</li>
+<li>✓ Mini Bar</li>
+<li>✓ Balcony View</li>
+<li>✓ Smart TV</li>
+<li>✓ Premium WiFi</li>
+
+</ul>
+
+<a href="#booking"
+class="bg-purple-700 text-white px-6 py-3 rounded-full inline-block">
+Reserve Now
+</a>
+
+</div>
+
+</div>
+
+<!-- ROOM 3 -->
+
+<div class="room-card bg-white rounded-3xl shadow-xl overflow-hidden transition">
+
+<img
+src="images/room1.jpeg"
+class="h-64 w-full object-cover">
+
+<div class="p-8">
+
+<h3 class="text-2xl font-bold mb-2">
+Executive Suite
+</h3>
+
+<p class="text-yellow-500 text-3xl font-bold mb-6">
+₦25,000/Night
+</p>
+
+<ul class="space-y-2 mb-6">
+
+<li>✓ Luxury Living Area</li>
+<!-- <li>✓ Jacuzzi</li> -->
+<li>✓ King Bed</li>
+<li>✓ Smart Entertainment</li>
+<li>✓ Premium WiFi</li>
+
+</ul>
+
+<a href="#booking"
+class="bg-purple-700 text-white px-6 py-3 rounded-full inline-block">
+Reserve Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services" class="py-24">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="text-center text-5xl font-bold text-purple-800 mb-16">
+Our Services
+</h2>
+
+<div class="grid md:grid-cols-5 gap-6">
+
+<div class="glass p-6 rounded-2xl text-center shadow">
+<i class="fa-solid fa-bed text-4xl text-purple-700 mb-4"></i>
+<h3>Room Service</h3>
+</div>
+
+<div class="glass p-6 rounded-2xl text-center shadow">
+<i class="fa-solid fa-utensils text-4xl text-purple-700 mb-4"></i>
+<h3>Restaurant</h3>
+</div>
+
+<div class="glass p-6 rounded-2xl text-center shadow">
+<i class="fa-solid fa-shirt text-4xl text-purple-700 mb-4"></i>
+<h3>Laundry</h3>
+</div>
+
+<div class="glass p-6 rounded-2xl text-center shadow">
+<i class="fa-solid fa-plane text-4xl text-purple-700 mb-4"></i>
+<h3>Airport Pickup</h3>
+</div>
+
+<!-- <div class="glass p-6 rounded-2xl text-center shadow">
+<i class="fa-solid fa-water-ladder text-4xl text-purple-700 mb-4"></i>
+<h3>Swimming Pool</h3>
+</div> -->
+
+<div class="glass p-6 rounded-2xl text-center shadow">
+<i class="fa-solid fa-building text-4xl text-purple-700 mb-4"></i>
+<h3>Conference Hall</h3>
+</div>
+
+<div class="glass p-6 rounded-2xl text-center shadow">
+<i class="fa-solid fa-calendar-check text-4xl text-purple-700 mb-4"></i>
+<h3>Event Hosting</h3>
+</div>
+
+<div class="glass p-6 rounded-2xl text-center shadow">
+<i class="fa-solid fa-wifi text-4xl text-purple-700 mb-4"></i>
+<h3>Free WiFi</h3>
+</div>
+
+<div class="glass p-6 rounded-2xl text-center shadow">
+<i class="fa-solid fa-shield-halved text-4xl text-purple-700 mb-4"></i>
+<h3>Security</h3>
+</div>
+
+<div class="glass p-6 rounded-2xl text-center shadow">
+<i class="fa-solid fa-car text-4xl text-purple-700 mb-4"></i>
+<h3>Parking Space</h3>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- RESTAURANT SECTION -->
+
+<section id="restaurant" class="py-24 bg-gradient-to-b from-white to-purple-50">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="text-center text-5xl font-bold text-purple-800 mb-6">
+Kitchen & Restaurant
+</h2>
+
+<p class="text-center text-gray-600 max-w-3xl mx-auto mb-16">
+Enjoy world-class dining experiences prepared by our professional chefs.
+Fresh ingredients, elegant atmosphere, and unforgettable flavors.
+</p>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<img onclick="openLightbox(this.src)"
+src="images/food1.jpeg"
+class="rounded-3xl shadow-xl cursor-pointer hover:scale-105 transition">
+
+<img onclick="openLightbox(this.src)"
+src="images/food2.jpeg"
+class="rounded-3xl shadow-xl cursor-pointer hover:scale-105 transition">
+
+<img onclick="openLightbox(this.src)"
+src="images/vip bar.jpeg"
+class="rounded-3xl shadow-xl cursor-pointer hover:scale-105 transition">
+
+</div>
+
+<div class="grid md:grid-cols-4 gap-6 mt-12">
+
+<div class="bg-white p-6 rounded-2xl shadow">
+<h3 class="font-bold text-xl mb-2">Breakfast</h3>
+<p>Continental & Local Dishes</p>
+</div>
+
+<div class="bg-white p-6 rounded-2xl shadow">
+<h3 class="font-bold text-xl mb-2">Lunch</h3>
+<p>Freshly Prepared Meals</p>
+</div>
+
+<div class="bg-white p-6 rounded-2xl shadow">
+<h3 class="font-bold text-xl mb-2">Dinner</h3>
+<p>Luxury Fine Dining</p>
+</div>
+
+<div class="bg-white p-6 rounded-2xl shadow">
+<h3 class="font-bold text-xl mb-2">Drinks</h3>
+<p>Premium Cocktails & Beverages</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ENVIRONMENT GALLERY -->
+
+<section id="gallery" class="py-24">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="text-center text-5xl font-bold text-purple-800 mb-16">
+Hotel Environment Gallery
+</h2>
+
+<div class="grid md:grid-cols-4 gap-6">
+
+<img onclick="openLightbox(this.src)"
+src="images/gallery1.jpeg"
+class="rounded-3xl h-72 w-full object-cover cursor-pointer">
+
+<img onclick="openLightbox(this.src)"
+src="images/gallery2.jpeg"
+class="rounded-3xl h-72 w-full object-cover cursor-pointer">
+
+<img onclick="openLightbox(this.src)"
+src="images/gallery3.jpeg"
+class="rounded-3xl h-72 w-full object-cover cursor-pointer">
+
+<img onclick="openLightbox(this.src)"
+src="images/gallery4.jpeg"
+class="rounded-3xl h-72 w-full object-cover cursor-pointer">
+
+<img onclick="openLightbox(this.src)"
+src="images/gallery5.jpeg"
+class="rounded-3xl h-72 w-full object-cover cursor-pointer">
+
+<img onclick="openLightbox(this.src)"
+src="images/vip bar.jpeg"
+class="rounded-3xl h-72 w-full object-cover cursor-pointer">
+
+<img onclick="openLightbox(this.src)"
+src="images/snooker2.jpeg"
+class="rounded-3xl h-72 w-full object-cover cursor-pointer">
+
+<img onclick="openLightbox(this.src)"
+src="images/food2.jpeg"
+class="rounded-3xl h-72 w-full object-cover cursor-pointer">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- AVAILABILITY CHECKER
+
+<section class="py-24 bg-purple-50">
+
+<div class="max-w-5xl mx-auto px-6">
+
+<h2 class="text-center text-5xl font-bold text-purple-800 mb-12">
+Check Room Availability
+</h2>
+
+<div class="bg-white p-10 rounded-3xl shadow">
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<input
+type="date"
+id="checkin"
+class="border p-4 rounded-xl">
+
+<input
+type="date"
+id="checkout"
+class="border p-4 rounded-xl">
+
+<select
+id="guests"
+class="border p-4 rounded-xl">
+
+<option>1 Guest</option>
+<option>2 Guests</option>
+<option>3 Guests</option>
+<option>4 Guests</option>
+
+</select>
+
+</div>
+
+<button
+onclick="checkAvailability()"
+class="mt-6 bg-purple-700 text-white px-8 py-4 rounded-full">
+
+Check Availability
+
+</button> -->
+
+<div
+id="availabilityResult"
+class="mt-8 text-lg font-semibold">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+
+
+
+<!-- LIGHTBOX -->
+
+<div
+id="lightbox"
+class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center">
+
+<button
+onclick="closeLightbox()"
+class="absolute top-8 right-10 text-white text-4xl">
+×
+</button>
+
+<img
+id="lightboxImg"
+class="max-w-[90%] max-h-[90%] rounded-xl">
+
+</div>
+
+<script>
+
+function openLightbox(src){
+document.getElementById("lightbox").classList.remove("hidden");
+document.getElementById("lightboxImg").src=src;
+}
+
+function closeLightbox(){
+document.getElementById("lightbox").classList.add("hidden");
+}
+
+function checkAvailability(){
+
+document.getElementById("availabilityResult").innerHTML=
+"✓ Standard Room Available<br>✓ Deluxe Room Available<br>✓ Executive Suite Available";
+
+}
+
+document.querySelectorAll(".faq-btn").forEach(btn=>{
+
+btn.addEventListener("click",()=>{
+
+btn.nextElementSibling.classList.toggle("hidden");
+
+});
+
+});
+
+</script>
+
+<!-- BOOKING SECTION -->
+
+<section id="booking" class="py-24 bg-gradient-to-b from-purple-100 to-white">
+
+<div class="max-w-5xl mx-auto px-6">
+
+<h2 class="text-center text-5xl font-bold text-purple-800 mb-12">
+Reserve Your Stay
+</h2>
+
+<div class="bg-white shadow-2xl rounded-3xl p-10">
+
+<form
+action="https://formspree.io/f/YOUR_FORM_ID"
+method="POST"
+class="grid md:grid-cols-2 gap-6">
+
+<input
+required
+type="text"
+name="full_name"
+placeholder="Full Name"
+class="border p-4 rounded-xl">
+
+<input
+required
+type="email"
+name="email"
+placeholder="Email Address"
+class="border p-4 rounded-xl">
+
+<input
+required
+type="tel"
+name="phone"
+placeholder="Phone Number"
+class="border p-4 rounded-xl">
+
+<select
+required
+name="room_type"
+class="border p-4 rounded-xl">
+
+<option value="">Select Room Type</option>
+<option>Standard Room</option>
+<option>Deluxe Room</option>
+<option>Executive Suite</option>
+
+</select>
+
+<input
+required
+type="date"
+name="check_in"
+class="border p-4 rounded-xl">
+
+<input
+required
+type="date"
+name="check_out"
+class="border p-4 rounded-xl">
+
+<input
+required
+type="number"
+name="guests"
+placeholder="Number of Guests"
+class="border p-4 rounded-xl">
+
+<input
+type="text"
+name="special_requests"
+placeholder="Special Requests"
+class="border p-4 rounded-xl">
+
+<input
+type="hidden"
+name="_next"
+value="https://yourdomain.com/thankyou.html">
+
+<button
+type="submit"
+class="md:col-span-2 bg-purple-700 hover:bg-purple-800 text-white py-4 rounded-xl font-bold text-lg">
+
+Reserve Now
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="py-24">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="text-center text-5xl font-bold text-purple-800 mb-16">
+Contact Us
+</h2>
+
+<div class="grid md:grid-cols-2 gap-10">
+
+<div>
+
+<div class="space-y-6">
+
+<div class="bg-white p-6 rounded-2xl shadow">
+
+<h3 class="font-bold text-xl mb-2">
+Address
+</h3>
+
+<p>
+123 Smile Home Avenue,
+Port Harcourt, Nigeria
+</p>
+
+</div>
+
+<div class="bg-white p-6 rounded-2xl shadow">
+
+<h3 class="font-bold text-xl mb-2">
+Phone
+</h3>
+
+<p>
++234 800 000 0000
+</p>
+
+</div>
+
+<div class="bg-white p-6 rounded-2xl shadow">
+
+<h3 class="font-bold text-xl mb-2">
+Email
+</h3>
+
+<p>
+info@smilehomehotel.com
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div>
+
+<iframe
+class="w-full h-96 rounded-3xl shadow-xl"
+src="https://maps.google.com/maps?q=Port%20Harcourt&t=&z=13&ie=UTF8&iwloc=&output=embed"
+loading="lazy">
+</iframe>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="bg-purple-900 text-white pt-16 pb-8">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="grid md:grid-cols-4 gap-10">
+
+<div>
+
+<h3 class="text-2xl font-bold mb-4">
+Smile Home Hotel
+</h3>
+
+<p>
+Experience Comfort, Luxury & Hospitality Like Never Before.
+</p>
+
+</div>
+
+<div>
+
+<h4 class="font-bold mb-4">
+Quick Links
+</h4>
+
+<ul class="space-y-2">
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#rooms">Rooms</a></li>
+<li><a href="#services">Services</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h4 class="font-bold mb-4">
+Services
+</h4>
+
+<ul class="space-y-2">
+
+<li>Restaurant</li>
+<li>Room Service</li>
+<li>Conference Hall</li>
+<li>Airport Pickup</li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h4 class="font-bold mb-4">
+Follow Us
+</h4>
+
+<div class="flex gap-4 text-2xl">
+
+<a href="#">
+<i class="fab fa-facebook"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-x-twitter"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-linkedin"></i>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<hr class="my-10 border-purple-700">
+
+<div class="text-center">
+
+<p>
+© 2026 Smile Home Hotel & Suites.
+All Rights Reserved.
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+
+<a
+href="https://wa.me/2348000000000"
+target="_blank"
+class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl text-3xl z-50">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- BACK TO TOP -->
+
+<button
+id="topBtn"
+class="hidden fixed bottom-24 right-6 bg-purple-700 text-white w-14 h-14 rounded-full shadow-xl z-50">
+
+↑
+
+</button>
+
+<script>
+
+/* DARK MODE */
+
+const darkBtn = document.getElementById("darkBtn");
+
+darkBtn.addEventListener("click",()=>{
+
+document.documentElement.classList.toggle("dark");
+
+});
+
+/* BACK TO TOP */
+
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY > 500){
+
+topBtn.classList.remove("hidden");
+
+}else{
+
+topBtn.classList.add("hidden");
+
+}
+
+});
+
+topBtn.addEventListener("click",()=>{
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+});
+
+/* SCROLL ANIMATION */
+
+const observer = new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+document.querySelectorAll(".fade").forEach(el=>{
+
+observer.observe(el);
+
+});
+
+</script>
+
+</body>
+</html>
